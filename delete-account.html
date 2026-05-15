@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Skaner Biznesowy / Chart Scanner AI — jak usunąć konto i powiązane dane." />
+  <title>Usunięcie konta — Skaner Biznesowy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div class="logo">CS</div>
+      <div class="brand">
+        Skaner Biznesowy
+        <small>Usunięcie konta</small>
+      </div>
+    </header>
+
+    <h1>Jak usunąć konto i dane</h1>
+
+    <p class="lead">
+      Możesz w każdej chwili trwale usunąć swoje konto Skaner Biznesowy
+      (Chart Scanner AI) razem ze wszystkimi powiązanymi danymi.
+      Poniżej znajdziesz instrukcję krok po kroku oraz informacje o tym,
+      jakie dane są usuwane, a jakie zostają.
+    </p>
+
+    <h2>Sposób 1 — Usunięcie z poziomu aplikacji (najszybsze)</h2>
+    <ol>
+      <li>Otwórz aplikację Skaner Biznesowy na swoim urządzeniu.</li>
+      <li>Zaloguj się na konto, które chcesz skasować.</li>
+      <li>Przejdź do <strong>Ustawienia</strong> (ikonka w prawym górnym rogu ekranu głównego).</li>
+      <li>Przewiń do sekcji <strong>Moje dane</strong>.</li>
+      <li>Wybierz opcję <strong>„Usuń konto"</strong>.</li>
+      <li>Potwierdź hasłem (wymagane dla bezpieczeństwa, zgodnie z zasadami Firebase).</li>
+      <li>Konto zostanie usunięte trwale i natychmiastowo.</li>
+    </ol>
+
+    <h2>Sposób 2 — Zgłoszenie usunięcia mailem</h2>
+    <p>
+      Jeżeli nie masz dostępu do aplikacji lub konta, możesz wysłać prośbę
+      o usunięcie na adres:
+    </p>
+    <p>
+      <code class="email">kontakt@mjgweb.pl</code>
+    </p>
+    <p>
+      W treści wiadomości podaj adres email konta, które chcesz usunąć.
+      Odpowiadamy w ciągu 24 godzin w dni robocze.
+      Konto zostanie usunięte w terminie do 30 dni od daty zgłoszenia.
+    </p>
+
+    <h2>Jakie dane są usuwane</h2>
+    <ul>
+      <li>Konto Firebase Authentication (email, hasło, status weryfikacji).</li>
+      <li>Profil w bazie Firestore (nazwa, email, photoURL, blokady).</li>
+      <li>Status subskrypcji premium i liczniki użycia (analysisCount, aiCreditCount).</li>
+      <li>Awatar przechowywany w Firebase Storage.</li>
+      <li>Historia analiz oraz notatki przechowywane lokalnie na urządzeniu
+        — zostają usunięte przy odinstalowaniu aplikacji lub wyczyszczeniu
+        danych aplikacji w ustawieniach urządzenia.</li>
+    </ul>
+
+    <h2>Co może pozostać po usunięciu konta</h2>
+    <ul>
+      <li>
+        <strong>Posty i komentarze w społeczności</strong> opublikowane przed usunięciem konta
+        mogą pozostać widoczne dla innych użytkowników. Twoje dane osobowe
+        (displayName, awatar) zostaną zanonimizowane — w miejscu autora pojawi
+        się oznaczenie „Trader". Treść samej wiadomości nie jest automatycznie usuwana,
+        ponieważ inni użytkownicy mogli się do niej odnieść (komentarze, reakcje).
+      </li>
+      <li>
+        <strong>Subskrypcja w Google Play</strong> nie zostaje automatycznie anulowana
+        przy usunięciu konta w aplikacji. Aby anulować aktywną subskrypcję,
+        otwórz aplikację Google Play → Subskrypcje → wybierz Skaner Biznesowy → Anuluj.
+      </li>
+      <li>
+        <strong>Zgłoszenia treści</strong> (raporty wysłane przez Ciebie poprzez funkcję „Zgłoś")
+        zostają zachowane w celach moderacyjnych zgodnie z naszą Polityką prywatności.
+      </li>
+      <li>
+        <strong>Logi techniczne</strong> (anonimizowane logi Firebase, niezawierające danych osobowych)
+        zostają w systemie zgodnie z polityką retencji Google Cloud — do 30 dni.
+      </li>
+    </ul>
+
+    <h2>Indywidualne usuwanie treści</h2>
+    <p>
+      Bez konieczności kasowania całego konta możesz samodzielnie usuwać:
+    </p>
+    <ul>
+      <li>poszczególne posty i komentarze w społeczności
+        (długie przytrzymanie na poście/komentarzu → opcja „Usuń"),</li>
+      <li>analizy z historii (długie przytrzymanie na pozycji historii),</li>
+      <li>notatki przypisane do analiz,</li>
+      <li>awatar (Ustawienia → Profil → Usuń zdjęcie).</li>
+    </ul>
+
+    <div class="contact">
+      <h3>Kontakt</h3>
+      <p>W sprawach związanych z usunięciem konta lub innych zgłoszeń prywatności:
+        <code class="email">kontakt@mjgweb.pl</code>
+      </p>
+      <p style="font-size: 12px; color: var(--dim);">
+        Odpowiadamy w ciągu 24 godzin w dni robocze.
+      </p>
+    </div>
+
+    <p style="margin-top: 32px;">
+      <a href="index.html">← Wróć do dokumentów prawnych</a>
+    </p>
+
+    <footer>
+      &copy; 2026 Skaner Biznesowy (Chart Scanner AI). Wszelkie prawa zastrzeżone.
+    </footer>
+  </div>
+</body>
+</html>
